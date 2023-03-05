@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(https://fonts.google.com/specimen/Outfit);
+}
+
+:root{
+    --cor0: hsl(0, 0%, 100%);
+    --cor1: hsl(212, 45%, 89%);
+    --cor2: hsl(220, 15%, 55%);
+    --cor3: hsl(218, 44%, 22%);
+
+    --font-padrao: 'Outfit';
+
+}
+
+
+*{
+    margin: 0px;
+
+    
+}
+
+body{
+    background:var(--cor1);
+}
+
+
+
+main{
+    margin:120px;
+    border-radius: 30px;
+    background: var(--cor0);
+}
+img{
+    margin-top: 30px;
+    margin-left: 35px;
+    border-radius: 14px;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--cor3);
+    text-align: center;
+    padding: 15px;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--cor2);
+    text-align: center;
+    padding: 15px;
+}
+
+footer{
+
+    text-align: center;
+    color: white;
+    background: var(--cor3);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: var(--cor2)
+
+}
