@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'Outfit';
-    src: url(https://fonts.google.com/specimen/Outfit);
-}
+@import url(https://fonts.google.com/specimen/Outfit);
 
 :root{
     --cor0: hsl(0, 0%, 100%);
@@ -11,7 +8,7 @@
     --cor2: hsl(220, 15%, 55%);
     --cor3: hsl(218, 44%, 22%);
 
-    --font-padrao: 'Outfit';
+    --font-Outfit: "Outfit", sans-serif;
 
 }
 
@@ -26,17 +23,13 @@ body{
     background:var(--cor1);
 }
 
-
-
-main{
-    margin:120px;
-    border-radius: 30px;
-    background: var(--cor0);
-}
 .container{
     width: 400px; 
+    border-radius: 30px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    background: var(--cor0);
 }
 img{
     margin-top: 30px;
@@ -45,31 +38,16 @@ img{
 }
 
 h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--font-Outfit);
     color: var(--cor3);
     text-align: center;
     padding: 15px;
 }
 
 p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--font-Outfit);
     color: var(--cor2);
     text-align: center;
     padding: 15px;
 }
 
-footer{
-
-    text-align: center;
-    color: white;
-    background: var(--cor3);
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    color: var(--cor2)
-
-}
