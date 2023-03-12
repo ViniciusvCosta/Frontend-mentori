@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+
+:root{
+    --var-color1:hsl(225, 100%, 94%);
+    --var-color2:hsl(245, 75%, 52%);
+    --var-color3:hsl(225, 100%, 98%);
+    --var-color4:hsl(224, 23%, 55%);
+    --var-color5:hsl(223, 47%, 23%);
+
+    --var-font: "Red Hat Display", sans-serif;
+
+}
+
+body{
+    margin: 0;
+    background: var(--var-color1) url(imagens/pattern-background-desktop.svg) no-repeat;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.container{
+    background: var(--var-color3);
+    height: 500px;
+    width: 350px;
+    margin-top: 60px;
+    border-radius: 15px;
+    box-shadow:0px 5px 20px -5px  rgba(0, 0, 0, 0.555);
+}
+.cont_img > img{
+    width:100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+h1{
+    font-family: var(--var-font);
+    font-size: 25px;
+    color: var(--var-color5);
+    text-align: center;
+}
+
+p{
+    font-family: var(--var-font);
+    font-size: 14px;
+    color: var(--var-color4);
+    margin: 18px;
+    text-align: center;
+}
+
+.cont_plan{
+    display: flex;
+    justify-content: center;
+}
+
+.cont_plan > img ,p{
+    display: inline-block;  
+    margin: 15px; 
+}
+
+
+.cont_plan > a {
+    text-decoration: none;
+    font-family: var(--var-font);
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 80px;
+    
+}
+
+.cont_proc{
+    display: flex;
+    justify-content: center;
+}
+button{
+    all: unset;
+    text-align: center;
+    background-color: var(--var-color2);
+    font-family: var(--var-font);
+    font-size: .85em;
+    font-weight: 750;
+    color: var(--var-color1);
+    width: 70%;
+    height: 35px;
+    border-radius: 15px;
+    box-shadow: 0 9px 15px hsla(224, 23%, 55%, 0.5);
+    padding: 5px 25px;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: var(--var-color4);
+    transition: .8s;
+}
+
+.cont_cancel{
+    display: flex;
+    justify-content: center;
+}
+
+.cont_cancel > a{
+    font-family: var(--var-font);
+    color: var(--var-color4);
+    margin-top: 15px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.cont_cancel > a:hover{
+    color: var(--var-color5);
+    transition: .6s;
+}
